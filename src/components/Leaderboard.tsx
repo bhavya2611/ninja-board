@@ -1,0 +1,145 @@
+"use client";
+import React, { useState, useEffect, useCallback } from 'react';
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+import { Input } from "@/components/ui/input"
+import { ArrowDown, ArrowUp, User, Section, BarChart, Trophy, Pointer, TrendingUp, TrendingDown } from 'lucide-react';
+
+// Define the type for a player entry
+type Player = {
+  Rank: number;
+  Name: string;
+  "Ninja Sessions Attended": number;
+  "Matches Played": number;
+  "Matches Won": number;
+  "Matches Lost": number;
+  "Points Won": number;
+  "Points Lost": number;
+  "Total Ninja Points": number;
+  "Player Rating": number;
+};
+
+const columns = [
+  { key: 'Rank', label: 'Rank', icon: null, sortable: true },
+  { key: 'Name', label: 'Name', icon: User, sortable: true },
+  { key: 'Ninja Sessions Attended', label: 'Ninja Sessions', icon: Section, sortable: false },
+  { key: 'Matches Played', label: 'Matches Played', icon: BarChart, sortable: false },
+  { key: 'Matches Won', label: 'Matches Won', icon: Trophy, sortable: false },
+  { key: 'Matches Lost', label: 'Matches Lost', icon: null, sortable: false },
+  { key: 'Points Won', label: 'Points Won', icon: TrendingUp, sortable: false },
+  { key: 'Points Lost', label: 'Points Lost', icon: TrendingDown, sortable: false },
+  { key: 'Total Ninja Points', label: 'Total Points', icon: Pointer, sortable: true },
+  { key: 'Player Rating', label: 'Rating', icon: null, sortable: false },
+];
+
+export const Leaderboard = () => {
+  const [players, setPlayers] = useState<Player[]>([]);
+  const [search, setSearch] = useState('');
+  const [sortColumn, setSortColumn] = useState<keyof Player | null>('Name');
+  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
+
+  // Load data from JSON file
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const response = await fetch('/data/leaderboard_data.json');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data: Player[] = await response.json();
+        // Calculate ranks based on total ninja points
+        const rankedData = data.sort((a, b) => b["Name"] > a["Name"] ? -1 : 1)
+          .map((player, index) => ({ ...player, Rank: index + 1 }));
+        setPlayers(rankedData);
+      } catch (error) {
+        console.error("Could not load leaderboard data:", error);
+      }
+    };
+  
+    loadData();
+  }, []);
+
+  // Function to sort the leaderboard
+  const sortPlayers = useCallback((column: keyof Player) => {
+    if (column === sortColumn) {
+      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
+    } else {
+      setSortColumn(column);
+      setSortDirection('desc');
+    }
+  }, [sortColumn, sortDirection]);
+
+  // Sort and filter players
+  const sortedPlayers = React.useMemo(() => {
+    let sortablePlayers = [...players];
+
+    if (sortColumn) {
+      sortablePlayers.sort((a, b) => {
+        const direction = sortDirection === 'asc' ? 1 : -1;
+        // Handle numeric sorting
+        if (typeof a[sortColumn] === 'number' && typeof b[sortColumn] === 'number') {
+          return direction * (Number(a[sortColumn]) - Number(b[sortColumn]));
+        } else {
+          if(a[sortColumn] < b[sortColumn]){
+            return -1 * direction;
+          } else if(a[sortColumn] > b[sortColumn]){
+            return 1 * direction;
+          } else {
+            return 0
+          }
+        }
+      });
+    }
+
+    return sortablePlayers.filter(player =>
+      player.Name.toLowerCase().includes(search.toLowerCase())
+    );
+  }, [players, search, sortColumn, sortDirection]);
+
+  return (
+    <div>
+      <Input
+        type="search"
+        placeholder="Search player..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        className="mb-4 rounded-xl"
+      />
+      <div className="relative overflow-x-auto shadow-md rounded-xl border-[1px]">
+        <Table>
+          <TableHeader>
+            <TableRow className='bg-gray-100'>
+              {columns.map((column) => (
+                <TableHead key={column.key} className="px-6 py-3">
+                  {column.sortable ? (
+                    <button
+                      onClick={() => sortPlayers(column.key as keyof Player)}
+                      className="flex items-center gap-1 hover:underline"
+                    >
+                      {column.label}
+                      {sortColumn === column.key && (
+                        sortDirection === 'asc' ? <ArrowUp className="h-4 w-4" /> : <ArrowDown className="h-4 w-4" />
+                      )}
+                    </button>
+                  ) : (
+                    <div className="flex items-center gap-1">{column.label} {column.icon && <column.icon className="inline-block h-4 w-4 ml-1" />}</div>
+                  )}
+                </TableHead>
+              ))}
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {sortedPlayers.map((player, index) => (
+              <TableRow className={`${index % 2 == 1 ? "bg-[#fd390017]" : "bg-white"}`} key={player.Name}>
+                {columns.map(column => (
+                  <TableCell key={column.key} className="px-6 py-4">
+                    {column.key === 'Rank' && !isNaN(Number(player[column.key])) ? `#${player[column.key]}` : player[column.key]}
+                  </TableCell>
+                ))}
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
+    </div>
+  );
+};
