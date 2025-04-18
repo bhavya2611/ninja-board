@@ -1,0 +1,76 @@
+{
+  "teams": [
+    {
+      "name": "Anuj Ranka + Swanand Bedekar",
+      "level": "Pro"
+    },
+    {
+      "name": "Prathamesh Badve + Arya Kulkarni",
+      "level": "Pro"
+    },
+    {
+      "name": "Kuldeep Ruchandani + Yash Mitkari",
+      "level": "Pro"
+    },
+    {
+      "name": "Rohan Jadhav + Sudhanshu Medsiker",
+      "level": "Pro"
+    },
+    {
+      "name": "Ishant Rege + Aarin Mali",
+      "level": "Pro"
+    },
+    {
+      "name": "Yash Shah + Anuj Mehta",
+      "level": "Pro"
+    },
+    {
+      "name": "Bhavya Mehta + Astha Goel",
+      "level": "Inter"
+    },
+    {
+      "name": "Yash Mundada + Sam Rao",
+      "level": "Inter"
+    },
+    {
+      "name": "Siddique Mirajwale + Akshay Mahajan",
+      "level": "Inter"
+    },
+    {
+      "name": "Sarthak Shinde + Aman Arora",
+      "level": "Inter"
+    },
+    {
+      "name": "Aditya Mehta + Kaustubh Patil",
+      "level": "Inter"
+    },
+    {
+      "name": "Shubhranshu Bhoi + Navin Oswal",
+      "level": "Inter"
+    },
+    {
+      "name": "Atharva Sonavane + Himanshu Puneja",
+      "level": "Inter"
+    },
+    {
+      "name": "Aditya Shendege + Suryabhan Shinde",
+      "level": "Inter"
+    },
+    {
+      "name": "Piyusha Singh + Himanshu Dasani",
+      "level": "Beg"
+    },
+    {
+      "name": "Soham Pattnaik + Shalini Kr",
+      "level": "Beg"
+    },
+    {
+      "name": "Priyanka Daga + Astha Sinha",
+      "level": "Beg"
+    },
+    {
+      "name": "Dhananjay Kurekar + Shalini Ubey",
+      "level": "Beg"
+    }
+  ]
+}
