@@ -161,101 +161,102 @@ const SubmitScores = () => {
   );
 
   return (
-    <div className='container mx-auto py-10 px-4'>
-      <h1 className='text-2xl font-bold mb-6'>Submit Scores</h1>
-      {error && <div className='text-red-500 mb-4'>{error}</div>}
-      <form onSubmit={handleSubmit} className='grid gap-4'>
-        <div>
-          <Label htmlFor='group'>Group</Label>
-          <Select value={group} onValueChange={setGroup}>
-            <SelectTrigger id='group'>
-              <SelectValue placeholder='Select Group' />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value='Pro'>Pro</SelectItem>
-              <SelectItem value='Inter'>Inter</SelectItem>
-              <SelectItem value='Beg'>Beg</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-        <div>
-          <Label htmlFor='team1'>Team 1</Label>
-          <Select value={team1} onValueChange={setTeam1}>
-            <SelectTrigger id='team1'>
-              <SelectValue placeholder='Select Team 1' />
-            </SelectTrigger>
-            <SelectContent>
-              {group &&
-                filteredTeams(group).map((team) => (
-                  <SelectItem key={team.name} value={team.name}>
-                    {team.name}
-                  </SelectItem>
-                ))}
-              {!group && (
-                <SelectItem value='na' disabled>
-                  Select Group first
-                </SelectItem>
-              )}
-            </SelectContent>
-          </Select>
-        </div>
-        <div>
-          <Label htmlFor='team2'>Team 2</Label>
-          <Select value={team2} onValueChange={setTeam2}>
-            <SelectTrigger id='team1'>
-              <SelectValue placeholder='Select Team 2' />
-            </SelectTrigger>
-            <SelectContent>
-              {team1 &&
-                filteredTeams(group, team1).map((team) => (
-                  <SelectItem key={team.name} value={team.name}>
-                    {team.name}
-                  </SelectItem>
-                ))}
-              {!team1 && (
-                <SelectItem value='na' disabled>
-                  Select Team 1 first
-                </SelectItem>
-              )}
-            </SelectContent>
-          </Select>
-        </div>
-        <div>
-          <Label htmlFor='team1Points'>Team 1 Points</Label>
-          <Input
-            type='number'
-            id='team1Points'
-            value={team1Points !== undefined ? team1Points.toString() : ""}
-            onChange={(e) => setTeam1Points(Number(e.target.value))}
-            placeholder='Enter Team 1 Points'
-          />
-        </div>
-        <div>
-          <Label htmlFor='team2Points'>Team 2 Points</Label>
-          <Input
-            type='number'
-            id='team2Points'
-            value={team2Points !== undefined ? team2Points.toString() : ""}
-            onChange={(e) => setTeam2Points(Number(e.target.value))}
-            placeholder='Enter Team 2 Points'
-          />
-        </div>
-        <div>
-          <Label htmlFor='team2Points'>Ninja Points</Label>
-          <Input
-            type='number'
-            id='ninjaPoints'
-            value={ninjaPoints?.toString() ?? ""}
-            onChange={(e) => setNinjaPoints(Number(e.target.value))}
-            placeholder='Enter Ninja Points'
-          />
-        </div>
+    <></>
+    // <div className='container mx-auto py-10 px-4'>
+    //   <h1 className='text-2xl font-bold mb-6'>Submit Scores</h1>
+    //   {error && <div className='text-red-500 mb-4'>{error}</div>}
+    //   <form onSubmit={handleSubmit} className='grid gap-4'>
+    //     <div>
+    //       <Label htmlFor='group'>Group</Label>
+    //       <Select value={group} onValueChange={setGroup}>
+    //         <SelectTrigger id='group'>
+    //           <SelectValue placeholder='Select Group' />
+    //         </SelectTrigger>
+    //         <SelectContent>
+    //           <SelectItem value='Pro'>Pro</SelectItem>
+    //           <SelectItem value='Inter'>Inter</SelectItem>
+    //           <SelectItem value='Beg'>Beg</SelectItem>
+    //         </SelectContent>
+    //       </Select>
+    //     </div>
+    //     <div>
+    //       <Label htmlFor='team1'>Team 1</Label>
+    //       <Select value={team1} onValueChange={setTeam1}>
+    //         <SelectTrigger id='team1'>
+    //           <SelectValue placeholder='Select Team 1' />
+    //         </SelectTrigger>
+    //         <SelectContent>
+    //           {group &&
+    //             filteredTeams(group).map((team) => (
+    //               <SelectItem key={team.name} value={team.name}>
+    //                 {team.name}
+    //               </SelectItem>
+    //             ))}
+    //           {!group && (
+    //             <SelectItem value='na' disabled>
+    //               Select Group first
+    //             </SelectItem>
+    //           )}
+    //         </SelectContent>
+    //       </Select>
+    //     </div>
+    //     <div>
+    //       <Label htmlFor='team2'>Team 2</Label>
+    //       <Select value={team2} onValueChange={setTeam2}>
+    //         <SelectTrigger id='team1'>
+    //           <SelectValue placeholder='Select Team 2' />
+    //         </SelectTrigger>
+    //         <SelectContent>
+    //           {team1 &&
+    //             filteredTeams(group, team1).map((team) => (
+    //               <SelectItem key={team.name} value={team.name}>
+    //                 {team.name}
+    //               </SelectItem>
+    //             ))}
+    //           {!team1 && (
+    //             <SelectItem value='na' disabled>
+    //               Select Team 1 first
+    //             </SelectItem>
+    //           )}
+    //         </SelectContent>
+    //       </Select>
+    //     </div>
+    //     <div>
+    //       <Label htmlFor='team1Points'>Team 1 Points</Label>
+    //       <Input
+    //         type='number'
+    //         id='team1Points'
+    //         value={team1Points !== undefined ? team1Points.toString() : ""}
+    //         onChange={(e) => setTeam1Points(Number(e.target.value))}
+    //         placeholder='Enter Team 1 Points'
+    //       />
+    //     </div>
+    //     <div>
+    //       <Label htmlFor='team2Points'>Team 2 Points</Label>
+    //       <Input
+    //         type='number'
+    //         id='team2Points'
+    //         value={team2Points !== undefined ? team2Points.toString() : ""}
+    //         onChange={(e) => setTeam2Points(Number(e.target.value))}
+    //         placeholder='Enter Team 2 Points'
+    //       />
+    //     </div>
+    //     <div>
+    //       <Label htmlFor='team2Points'>Ninja Points</Label>
+    //       <Input
+    //         type='number'
+    //         id='ninjaPoints'
+    //         value={ninjaPoints?.toString() ?? ""}
+    //         onChange={(e) => setNinjaPoints(Number(e.target.value))}
+    //         placeholder='Enter Ninja Points'
+    //       />
+    //     </div>
 
-        <Button type='submit' disabled={loading}>
-          {loading ? "Submitting..." : "Submit Score"}
-        </Button>
-      </form>
-    </div>
+    //     <Button type='submit' disabled={loading}>
+    //       {loading ? "Submitting..." : "Submit Score"}
+    //     </Button>
+    //   </form>
+    // </div>
   );
 };
 

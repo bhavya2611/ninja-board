@@ -72,8 +72,10 @@ const columns = [
 export const Leaderboard = () => {
   const [players, setPlayers] = useState<Player[]>([]);
   const [search, setSearch] = useState("");
-  const [sortColumn, setSortColumn] = useState<keyof Player | null>("Name");
-  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
+  const [sortColumn, setSortColumn] = useState<keyof Player | null>(
+    "Total Ninja Points"
+  );
+  const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
 
   // Load data from JSON file
   useEffect(() => {
@@ -96,6 +98,8 @@ export const Leaderboard = () => {
           );
 
           if (player["Ninja Sessions Attended"] > 0) {
+            player["Matches Played"] = playerGames.length;
+
             player["Matches Won"] = playerGames.filter(
               (game: { matchWon: boolean }) => game.matchWon
             ).length;
@@ -130,7 +134,8 @@ export const Leaderboard = () => {
 
         // Calculate ranks based on total ninja points
         const rankedData = leaderboardData
-          .sort((a, b) => (b["Name"] > a["Name"] ? -1 : 1))
+          // .sort((a, b) => b["Total Ninja Points"] - a["Total Ninja Points"])
+          // .sort((a, b) => (b["Name"] > a["Name"] ? -1 : 1))
           .map((player, index) => ({ ...player, Rank: index + 1 }));
 
         setPlayers(rankedData);
