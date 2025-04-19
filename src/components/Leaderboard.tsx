@@ -132,6 +132,14 @@ export const Leaderboard = () => {
             );
 
             player["Net Points"] = player["Points Won"] - player["Points Lost"];
+          } else {
+            player["Games Played"] = 0;
+            player["Games Won"] = 0;
+            player["Games Lost"] = 0;
+            player["Total Ninja Points"] = 0;
+            player["Points Won"] = 0;
+            player["Points Lost"] = 0;
+            player["Net Points"] = 0;
           }
 
           leaderboardData.push(player);
@@ -139,13 +147,13 @@ export const Leaderboard = () => {
 
         // Calculate ranks based on total ninja points
         const rankedData = leaderboardData
-          .sort((a, b) => b["Total Ninja Points"] - a["Total Ninja Points"])
-          // .sort(
-          //   (a, b) =>
-          //     b["Points Won"] -
-          //     b["Points Lost"] -
-          //     (a["Points Won"] - a["Points Lost"])
-          // )
+          .sort((a, b) => {
+            if (b["Total Ninja Points"] !== a["Total Ninja Points"]) {
+              return b["Total Ninja Points"] - a["Total Ninja Points"];
+            }
+
+            return b["Net Points"] - a["Net Points"];
+          })
           .map((player, index) => ({ ...player, Rank: index + 1 }));
 
         setPlayers(rankedData);
