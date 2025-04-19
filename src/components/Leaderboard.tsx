@@ -95,41 +95,44 @@ export const Leaderboard = () => {
             (game: { name: string }) => game.name === player.Name
           );
 
-          player["Matches Won"] = playerGames.filter(
-            (game: { matchWon: boolean }) => game.matchWon
-          ).length;
+          if (player["Ninja Sessions Attended"] > 0) {
+            player["Matches Won"] = playerGames.filter(
+              (game: { matchWon: boolean }) => game.matchWon
+            ).length;
 
-          player["Matches Lost"] = playerGames.filter(
-            (game: { matchWon: boolean }) => !game.matchWon
-          ).length;
+            player["Matches Lost"] = playerGames.filter(
+              (game: { matchWon: boolean }) => !game.matchWon
+            ).length;
 
-          player["Total Ninja Points"] = playerGames.reduce(
-            (accumulator: number, game: { ninjaPoints: number }) =>
-              accumulator + game.ninjaPoints,
-            0
-          );
+            player["Total Ninja Points"] =
+              playerGames.reduce(
+                (accumulator: number, game: { ninjaPoints: number }) =>
+                  accumulator + game.ninjaPoints,
+                0
+              ) +
+              player["Ninja Sessions Attended"] * 10;
 
-          player["Points Won"] = playerGames.reduce(
-            (accumulator: number, game: { matchPointsWon: number }) =>
-              accumulator + game.matchPointsWon,
-            0
-          );
+            player["Points Won"] = playerGames.reduce(
+              (accumulator: number, game: { matchPointsWon: number }) =>
+                accumulator + game.matchPointsWon,
+              0
+            );
 
-          player["Points Lost"] = playerGames.reduce(
-            (accumulator: number, game: { matchPointsLost: number }) =>
-              accumulator + game.matchPointsLost,
-            0
-          );
+            player["Points Lost"] = playerGames.reduce(
+              (accumulator: number, game: { matchPointsLost: number }) =>
+                accumulator + game.matchPointsLost,
+              0
+            );
+          }
 
           leaderboardData.push(player);
         }
-
-        console.log({ leaderboardData });
 
         // Calculate ranks based on total ninja points
         const rankedData = leaderboardData
           .sort((a, b) => (b["Name"] > a["Name"] ? -1 : 1))
           .map((player, index) => ({ ...player, Rank: index + 1 }));
+
         setPlayers(rankedData);
       } catch (error) {
         console.error("Could not load leaderboard data:", error);
