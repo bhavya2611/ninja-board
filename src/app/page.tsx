@@ -13,7 +13,7 @@ export default function Home() {
         </div>
         <div className='flex flex-1 justify-center'>
           <h1 className='text-2xl md:text-4xl text-[#c66144] font-bold text-center'>
-            Ninja Board
+            Ninja Leaderboard
           </h1>
         </div>
         <div className='flex md:flex-1 justify-end'>

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ninja Board",
+  title: "Ninja Leaderboard",
   description: "Pickle Haus Net Ninjas Leaderboard"
 };
 
