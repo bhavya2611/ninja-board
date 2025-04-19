@@ -134,7 +134,7 @@ export const Leaderboard = () => {
 
         // Calculate ranks based on total ninja points
         const rankedData = leaderboardData
-          // .sort((a, b) => b["Total Ninja Points"] - a["Total Ninja Points"])
+          .sort((a, b) => b["Total Ninja Points"] - a["Total Ninja Points"])
           // .sort((a, b) => (b["Name"] > a["Name"] ? -1 : 1))
           .map((player, index) => ({ ...player, Rank: index + 1 }));
 
