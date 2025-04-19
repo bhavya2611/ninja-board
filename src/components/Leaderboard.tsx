@@ -27,11 +27,12 @@ type Player = {
   Rank: number;
   Name: string;
   "Ninja Sessions Attended": number;
-  "Matches Played": number;
-  "Matches Won": number;
-  "Matches Lost": number;
+  "Games Played": number;
+  "Games Won": number;
+  "Games Lost": number;
   "Points Won": number;
   "Points Lost": number;
+  "Net Points": number;
   "Total Ninja Points": number;
   "Player Rating": number;
 };
@@ -42,22 +43,26 @@ const columns = [
   {
     key: "Ninja Sessions Attended",
     label: "Ninja Sessions",
-    icon: Section,
     sortable: false
   },
   {
-    key: "Matches Played",
-    label: "Matches Played",
+    key: "Games Played",
+    label: "Games Played",
     icon: BarChart,
     sortable: false
   },
-  { key: "Matches Won", label: "Matches Won", icon: Trophy, sortable: false },
-  { key: "Matches Lost", label: "Matches Lost", icon: null, sortable: false },
+  { key: "Games Won", label: "Games Won", icon: Trophy, sortable: false },
+  { key: "Games Lost", label: "Games Lost", icon: null, sortable: false },
   { key: "Points Won", label: "Points Won", icon: TrendingUp, sortable: false },
   {
     key: "Points Lost",
     label: "Points Lost",
     icon: TrendingDown,
+    sortable: false
+  },
+  {
+    key: "Net Points",
+    label: "Net Points",
     sortable: false
   },
   {
@@ -96,13 +101,13 @@ export const Leaderboard = () => {
           );
 
           if (player["Ninja Sessions Attended"] > 0) {
-            player["Matches Played"] = playerGames.length;
+            player["Games Played"] = playerGames.length;
 
-            player["Matches Won"] = playerGames.filter(
+            player["Games Won"] = playerGames.filter(
               (game: { matchWon: boolean }) => game.matchWon
             ).length;
 
-            player["Matches Lost"] = playerGames.filter(
+            player["Games Lost"] = playerGames.filter(
               (game: { matchWon: boolean }) => !game.matchWon
             ).length;
 
@@ -125,6 +130,8 @@ export const Leaderboard = () => {
                 accumulator + game.matchPointsLost,
               0
             );
+
+            player["Net Points"] = player["Points Won"] - player["Points Lost"];
           }
 
           leaderboardData.push(player);
