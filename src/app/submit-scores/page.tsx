@@ -144,11 +144,11 @@ const SubmitScores = () => {
 
       // Reset form fields upon successful submission
       //setTeam1("");
-      setTeam2("");
-      setTeam1Points(undefined);
-      setTeam2Points(undefined);
-      //setGroup("");
-      setNinjaPoints(undefined);
+      //   setTeam2("");
+      //   setTeam1Points(undefined);
+      //   setTeam2Points(undefined);
+      //   //setGroup("");
+      //   setNinjaPoints(undefined);
 
       alert("Score submitted successfully!"); // replace with toast
     } catch (e: any) {

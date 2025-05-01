@@ -1444,36 +1444,36 @@
       "name": "Varun Kabdal",
       "matchWon": true,
       "matchPointsWon": 11,
-      "matchPointsLost": 8,
+      "matchPointsLost": 9,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092430377,
+      "timeStamp": 1746122759999,
       "ninjaPoints": 10
     },
     {
       "name": "Aditya Yadav",
       "matchWon": true,
       "matchPointsWon": 11,
-      "matchPointsLost": 8,
+      "matchPointsLost": 9,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092430377,
+      "timeStamp": 1746122759999,
       "ninjaPoints": 10
     },
     {
       "name": "Rohan Padman",
       "matchWon": false,
-      "matchPointsWon": 8,
+      "matchPointsWon": 9,
       "matchPointsLost": 11,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092430377,
+      "timeStamp": 1746122759999,
       "ninjaPoints": 0
     },
     {
       "name": "Chinmay Shah",
       "matchWon": false,
-      "matchPointsWon": 8,
+      "matchPointsWon": 9,
       "matchPointsLost": 11,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092430377,
+      "timeStamp": 1746122759999,
       "ninjaPoints": 0
     },
     {
@@ -1482,7 +1482,7 @@
       "matchPointsWon": 11,
       "matchPointsLost": 7,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092446360,
+      "timeStamp": 1746122775374,
       "ninjaPoints": 15
     },
     {
@@ -1491,7 +1491,7 @@
       "matchPointsWon": 11,
       "matchPointsLost": 7,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092446360,
+      "timeStamp": 1746122775374,
       "ninjaPoints": 15
     },
     {
@@ -1500,7 +1500,7 @@
       "matchPointsWon": 7,
       "matchPointsLost": 11,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092446360,
+      "timeStamp": 1746122775374,
       "ninjaPoints": 0
     },
     {
@@ -1509,115 +1509,117 @@
       "matchPointsWon": 7,
       "matchPointsLost": 11,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092446360,
+      "timeStamp": 1746122775374,
       "ninjaPoints": 0
     },
     {
-      "name": "Prerak Dongaonkar",
-      "matchWon": true,
-      "matchPointsWon": 11,
-      "matchPointsLost": 2,
+      "name": "Rohan Padman",
+      "matchWon": false,
+      "matchPointsWon": 5,
+      "matchPointsLost": 11,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092462990,
-      "ninjaPoints": 10
+      "timeStamp": 1746122790803,
+      "ninjaPoints": 0
     },
     {
-      "name": "Suryabhan Shinde",
-      "matchWon": true,
-      "matchPointsWon": 11,
-      "matchPointsLost": 2,
+      "name": "Chinmay Shah",
+      "matchWon": false,
+      "matchPointsWon": 5,
+      "matchPointsLost": 11,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092462990,
-      "ninjaPoints": 10
+      "timeStamp": 1746122790803,
+      "ninjaPoints": 0
     },
     {
       "name": "Chinmay Gode",
-      "matchWon": false,
-      "matchPointsWon": 2,
-      "matchPointsLost": 11,
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 5,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092462990,
-      "ninjaPoints": 0
+      "timeStamp": 1746122790803,
+      "ninjaPoints": 10
     },
     {
       "name": "Vivaswan Damle",
-      "matchWon": false,
-      "matchPointsWon": 2,
-      "matchPointsLost": 11,
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 5,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092462990,
-      "ninjaPoints": 0
+      "timeStamp": 1746122790803,
+      "ninjaPoints": 10
     },
     {
       "name": "Varun Kabdal",
       "matchWon": true,
       "matchPointsWon": 11,
-      "matchPointsLost": 7,
+      "matchPointsLost": 2,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092480646,
+      "timeStamp": 1746122805666,
       "ninjaPoints": 20
     },
     {
       "name": "Aditya Yadav",
       "matchWon": true,
       "matchPointsWon": 11,
-      "matchPointsLost": 7,
+      "matchPointsLost": 2,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092480646,
+      "timeStamp": 1746122805666,
       "ninjaPoints": 20
-    },
-    {
-      "name": "Chinmay Gode",
-      "matchWon": false,
-      "matchPointsWon": 7,
-      "matchPointsLost": 11,
-      "ninjaSessionId": 2,
-      "timeStamp": 1746092480646,
-      "ninjaPoints": 0
-    },
-    {
-      "name": "Vivaswan Damle",
-      "matchWon": false,
-      "matchPointsWon": 7,
-      "matchPointsLost": 11,
-      "ninjaSessionId": 2,
-      "timeStamp": 1746092480646,
-      "ninjaPoints": 0
-    },
-    {
-      "name": "Varun Kabdal",
-      "matchWon": true,
-      "matchPointsWon": 11,
-      "matchPointsLost": 3,
-      "ninjaSessionId": 2,
-      "timeStamp": 1746092500359,
-      "ninjaPoints": 23
-    },
-    {
-      "name": "Aditya Yadav",
-      "matchWon": true,
-      "matchPointsWon": 11,
-      "matchPointsLost": 3,
-      "ninjaSessionId": 2,
-      "timeStamp": 1746092500359,
-      "ninjaPoints": 23
     },
     {
       "name": "Poorva Soni",
       "matchWon": false,
-      "matchPointsWon": 3,
+      "matchPointsWon": 2,
       "matchPointsLost": 11,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092500359,
+      "timeStamp": 1746122805666,
       "ninjaPoints": 0
     },
     {
       "name": "Sankalp Mitra",
       "matchWon": false,
-      "matchPointsWon": 3,
+      "matchPointsWon": 2,
       "matchPointsLost": 11,
       "ninjaSessionId": 2,
-      "timeStamp": 1746092500359,
+      "timeStamp": 1746122805666,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Varun Kabdal",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 2,
+      "ninjaSessionId": 2,
+      "timeStamp": 1746123373417,
+      "bonusPoints": 10,
+      "ninjaPoints": 25
+    },
+    {
+      "name": "Aditya Yadav",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 2,
+      "ninjaSessionId": 2,
+      "timeStamp": 1746123373417,
+      "bonusPoints": 10,
+      "ninjaPoints": 25
+    },
+    {
+      "name": "Lavina Pinheiro (3)",
+      "matchWon": false,
+      "matchPointsWon": 2,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 2,
+      "timeStamp": 1746123373417,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Omkar Thombare",
+      "matchWon": false,
+      "matchPointsWon": 2,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 2,
+      "timeStamp": 1746123373417,
       "ninjaPoints": 0
     }
   ]
