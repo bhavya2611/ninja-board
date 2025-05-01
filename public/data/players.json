@@ -1,0 +1,512 @@
+[
+  {
+    "playerId": "#1",
+    "name": "Ishant Rege",
+    "contactNumber": "Na",
+    "age": 35,
+    "locality": "Deccan",
+    "gender": "Male",
+    "selfRating": 5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#2",
+    "name": "Anuj Mehta",
+    "contactNumber": 9823422887,
+    "age": 35,
+    "locality": "Shivaji nagar",
+    "gender": "Make ",
+    "selfRating": 5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#3",
+    "name": "Anuj Ranka",
+    "contactNumber": "NA",
+    "age": 35,
+    "locality": "Pune",
+    "gender": "Male",
+    "selfRating": 5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#4",
+    "name": "Prathamesh Badve",
+    "contactNumber": 9371207785,
+    "age": 28,
+    "locality": "Kasba Peth",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#5",
+    "name": "Sam Rao",
+    "contactNumber": "Na",
+    "age": 45,
+    "locality": "Vimannagar",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#6",
+    "name": "Kuldeep Ruchandani",
+    "contactNumber": 9822202890,
+    "age": 43,
+    "locality": "Kondhwa, Pune",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#7",
+    "name": "Suryabhan Shinde",
+    "contactNumber": 9822443535,
+    "age": 34,
+    "locality": "Baner",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#8",
+    "name": "Aarin Mali",
+    "contactNumber": 9067642822,
+    "age": 20,
+    "locality": "Karve Nagar",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#9",
+    "name": "Sarthak Shinde",
+    "contactNumber": 9822715788,
+    "age": 24,
+    "locality": "Vidyanagar",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#11",
+    "name": "Yash Mitkari",
+    "contactNumber": 9372397283,
+    "age": 24,
+    "locality": "NIBM Undri",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#12",
+    "name": "Sudhanshu Medsikar",
+    "contactNumber": 7507069898,
+    "age": 30,
+    "locality": "Sb road",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#13",
+    "name": "Arya Kulkarni",
+    "contactNumber": 8530414422,
+    "age": 22,
+    "locality": "Sahakarnagar",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#14",
+    "name": "Yash Shah",
+    "contactNumber": 7059696705,
+    "age": 24,
+    "locality": "Pune",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#15",
+    "name": "Shalini Kr",
+    "contactNumber": 8287863342,
+    "age": 28,
+    "locality": "Pune",
+    "gender": "Female",
+    "selfRating": 2,
+    "ninjaSessionsAttended": 0
+  },
+  {
+    "playerId": "#16",
+    "name": "Akshay Mahajan",
+    "contactNumber": 9823615751,
+    "age": 34,
+    "locality": "Pashan",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#17",
+    "name": "Siddique Mirajwale",
+    "contactNumber": 7276223356,
+    "age": 30,
+    "locality": "Kondhwa",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#18",
+    "name": "Navin Oswal",
+    "contactNumber": 9665504343,
+    "age": 33,
+    "locality": "Somwar Peth",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#19",
+    "name": "Astha Goel",
+    "contactNumber": 9650364565,
+    "age": 32,
+    "locality": "Kharadi",
+    "gender": "Female",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#20",
+    "name": "Aman Arora",
+    "contactNumber": 9716875119,
+    "age": 33,
+    "locality": "Kharadi",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#21",
+    "name": "Aditya Mehta",
+    "contactNumber": 9860056969,
+    "age": 33,
+    "locality": "Viman Nagar Pune",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#22",
+    "name": "Kaustubh Patil",
+    "contactNumber": 7743824460,
+    "age": 32,
+    "locality": "Sangvi",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#23",
+    "name": "Shubhranshu Bhoi",
+    "contactNumber": 9818621441,
+    "age": 25,
+    "locality": "Wadgaon sheri",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#24",
+    "name": "Himanshu Pupneja",
+    "contactNumber": 7757009434,
+    "age": 36,
+    "locality": "Amanora",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#25",
+    "name": "Atharva Sonavane",
+    "contactNumber": 9403284340,
+    "age": 22,
+    "locality": "Undhri",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#26",
+    "name": "Himanshu Dasani",
+    "contactNumber": 9422710714,
+    "age": 28,
+    "locality": "Keshavnagar",
+    "gender": "Male",
+    "selfRating": 2,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#27",
+    "name": "Aditya Shendege",
+    "contactNumber": "+91 88282 60319",
+    "age": 27,
+    "locality": "Mukundnagar",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#28",
+    "name": "Bhavya Mehta",
+    "contactNumber": 8237452611,
+    "age": 29,
+    "locality": "Market Yard, Pune",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#29",
+    "name": "Yash Mundada",
+    "contactNumber": 9975552775,
+    "age": 29,
+    "locality": "Market Yard",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#30",
+    "name": "Priyanka Daga",
+    "contactNumber": 9011529249,
+    "age": 33,
+    "locality": "Kharadi",
+    "gender": "Female",
+    "selfRating": 2,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#31",
+    "name": "Piyusha Singh",
+    "contactNumber": 7030863535,
+    "age": 43,
+    "locality": "Kharadi",
+    "gender": "Female",
+    "selfRating": 2,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#32",
+    "name": "Astha Sinha",
+    "contactNumber": 9960779179,
+    "age": 34,
+    "locality": "BT Kawade Road( Koregaon park annexe)",
+    "gender": "Female",
+    "selfRating": 2,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#33",
+    "name": "Soham Pattnaik",
+    "contactNumber": 8249393862,
+    "age": 30,
+    "locality": "Yerwada",
+    "gender": "Male",
+    "selfRating": 2,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#35",
+    "name": "Shalini Ubbey",
+    "contactNumber": 9987546727,
+    "age": 35,
+    "locality": "Amanora",
+    "gender": "Female",
+    "selfRating": 2,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#36",
+    "name": "Dhananjay Kurekar",
+    "contactNumber": 7020265045,
+    "age": 28,
+    "locality": "Dhanori",
+    "gender": "Male",
+    "selfRating": 2,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#37",
+    "name": "Swanand Bedekar",
+    "contactNumber": 8975862786,
+    "age": 38,
+    "locality": "Pune",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#38",
+    "name": "Rohan Jadhav",
+    "contactNumber": 7507069898,
+    "age": 30,
+    "locality": "Sb road",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#39",
+    "name": "Rohan Padman",
+    "contactNumber": "9823420477",
+    "age": "30-Apr-2025",
+    "locality": "Bhosale Nagar",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#40",
+    "name": "Omkar Thombare",
+    "contactNumber": "9960616489",
+    "age": "30-Apr-2025",
+    "locality": "Kothrud",
+    "gender": "Male",
+    "selfRating": 3.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#41",
+    "name": "Shauri Jain",
+    "contactNumber": "9960206969",
+    "age": "30-Apr-2025",
+    "locality": "Balewadi",
+    "gender": "Female",
+    "selfRating": 3.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#42",
+    "name": "Lavina Pinheiro",
+    "contactNumber": "7620937918",
+    "age": "30-Apr-2025",
+    "locality": "Baner",
+    "gender": "Female",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#43",
+    "name": "Vivaswan Damle",
+    "contactNumber": "9511772075",
+    "age": "30-Apr-2025",
+    "locality": "Kothrud",
+    "gender": "Male",
+    "selfRating": 3.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#44",
+    "name": "Varun Kabdal",
+    "contactNumber": "9309400355",
+    "age": "21-Oct-1999",
+    "locality": "Kharadi",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#45",
+    "name": "Poorva Soni",
+    "contactNumber": "7733836379",
+    "age": "30-Apr-2025",
+    "locality": "Wakad",
+    "gender": "Female",
+    "selfRating": 2,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#46",
+    "name": "Sankalp Mitra",
+    "contactNumber": "9975041773",
+    "age": "30-Apr-2025",
+    "locality": "Pune",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#47",
+    "name": "Chinmay Shah",
+    "contactNumber": "9511893368",
+    "age": "30-Apr-2025",
+    "locality": "Kothrud",
+    "gender": "Male",
+    "selfRating": 4,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#48",
+    "name": "Priyanka Moze",
+    "contactNumber": "8390681070",
+    "age": "30-Apr-2025",
+    "locality": "Pune",
+    "gender": "Female",
+    "selfRating": 2,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#49",
+    "name": "Chinmay Gode",
+    "contactNumber": "9479720201",
+    "age": "30-Apr-2025",
+    "locality": "Wakad",
+    "gender": "Male",
+    "selfRating": 2,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#50",
+    "name": "Aditya Yadav",
+    "contactNumber": "7385685647",
+    "age": "30-Apr-2025",
+    "locality": "PCMC",
+    "gender": "Male",
+    "selfRating": 3.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#51",
+    "name": "Chinar Deshpande",
+    "contactNumber": "7410760217",
+    "age": "30-Apr-2025",
+    "locality": "Baner",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#52",
+    "name": "Amit Deshpande",
+    "contactNumber": "9545456381",
+    "age": "30-Apr-2025",
+    "locality": "Baner",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#53",
+    "name": "Prerak Dongaonkar",
+    "contactNumber": "9967499558",
+    "age": "30-Apr-2025",
+    "locality": "Balewadi",
+    "gender": "Male",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  }
+]

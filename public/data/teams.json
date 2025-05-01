@@ -2,75 +2,133 @@
   "teams": [
     {
       "name": "Anuj Ranka + Swanand Bedekar",
+      "ninjaSessionId": 1,
       "level": "Pro"
     },
     {
       "name": "Prathamesh Badve + Arya Kulkarni",
+      "ninjaSessionId": 1,
       "level": "Pro"
     },
     {
       "name": "Kuldeep Ruchandani + Yash Mitkari",
+      "ninjaSessionId": 1,
       "level": "Pro"
     },
     {
-      "name": "Rohan Jadhav + Sudhanshu Medsiker",
+      "name": "Rohan Jadhav + Sudhanshu Medsikar",
+      "ninjaSessionId": 1,
       "level": "Pro"
     },
     {
       "name": "Ishant Rege + Aarin Mali",
+      "ninjaSessionId": 1,
       "level": "Pro"
     },
     {
       "name": "Yash Shah + Anuj Mehta",
+      "ninjaSessionId": 1,
       "level": "Pro"
     },
     {
       "name": "Bhavya Mehta + Astha Goel",
+      "ninjaSessionId": 1,
       "level": "Inter"
     },
     {
       "name": "Yash Mundada + Sam Rao",
+      "ninjaSessionId": 1,
       "level": "Inter"
     },
     {
       "name": "Siddique Mirajwale + Akshay Mahajan",
+      "ninjaSessionId": 1,
       "level": "Inter"
     },
     {
       "name": "Sarthak Shinde + Aman Arora",
+      "ninjaSessionId": 1,
       "level": "Inter"
     },
     {
       "name": "Aditya Mehta + Kaustubh Patil",
+      "ninjaSessionId": 1,
       "level": "Inter"
     },
     {
       "name": "Shubhranshu Bhoi + Navin Oswal",
+      "ninjaSessionId": 1,
       "level": "Inter"
     },
     {
       "name": "Atharva Sonavane + Himanshu Pupneja",
+      "ninjaSessionId": 1,
       "level": "Inter"
     },
     {
       "name": "Aditya Shendege + Suryabhan Shinde",
+      "ninjaSessionId": 1,
       "level": "Inter"
     },
     {
       "name": "Piyusha Singh + Himanshu Dasani",
+      "ninjaSessionId": 1,
       "level": "Beg"
     },
     {
       "name": "Soham Pattnaik + Shalini Kr",
+      "ninjaSessionId": 1,
       "level": "Beg"
     },
     {
       "name": "Priyanka Daga + Astha Sinha",
+      "ninjaSessionId": 1,
       "level": "Beg"
     },
     {
       "name": "Dhananjay Kurekar + Shalini Ubey",
+      "ninjaSessionId": 1,
       "level": "Beg"
+    },
+    {
+      "name": "Varun Kabdal + Aditya Yadav",
+      "ninjaSessionId": 2,
+      "level": "Inter"
+    },
+    {
+      "name": "Rohan Padman + Chinmay Shah",
+      "ninjaSessionId": 2,
+      "level": "Inter"
+    },
+    {
+      "name": "Prerak Dongaonkar + Suryabhan Shinde",
+      "ninjaSessionId": 2,
+      "level": "Inter"
+    },
+    {
+      "name": "Chinmay Gode + Vivaswan Damle",
+      "ninjaSessionId": 2,
+      "level": "Inter"
+    },
+    {
+      "name": "Poorva Soni + Sankalp Mitra",
+      "ninjaSessionId": 2,
+      "level": "Inter"
+    },
+    {
+      "name": "Priyanka Moze + Amit Deshpande",
+      "ninjaSessionId": 2,
+      "level": "Inter"
+    },
+    {
+      "name": "Lavina Pinheiro (3) + Omkar Thombare",
+      "ninjaSessionId": 2,
+      "level": "Inter"
+    },
+    {
+      "name": "Chinar Deshpande (3) + Shauri Jain",
+      "ninjaSessionId": 2,
+      "level": "Inter"
     }
   ]
 }

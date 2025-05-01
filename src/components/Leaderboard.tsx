@@ -25,8 +25,8 @@ import {
 // Define the type for a player entry
 type Player = {
   Rank: number;
-  Name: string;
-  "Ninja Sessions Attended": number;
+  name: string;
+  ninjaSessionsAttended: number;
   "Games Played": number;
   "Games Won": number;
   "Games Lost": number;
@@ -39,9 +39,9 @@ type Player = {
 
 const columns = [
   { key: "Rank", label: "Rank", icon: null, sortable: true },
-  { key: "Name", label: "Name", icon: User, sortable: true },
+  { key: "name", label: "Name", icon: User, sortable: true },
   {
-    key: "Ninja Sessions Attended",
+    key: "ninjaSessionsAttended",
     label: "Ninja Sessions",
     sortable: false
   },
@@ -71,7 +71,7 @@ const columns = [
     icon: Pointer,
     sortable: true
   },
-  { key: "Player Rating", label: "Rating", icon: null, sortable: false }
+  { key: "selfRating", label: "Rating", icon: null, sortable: false }
 ];
 
 export const Leaderboard = () => {
@@ -84,7 +84,7 @@ export const Leaderboard = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const response = await fetch("/data/leaderboard_data.json");
+        const response = await fetch("/data/players.json");
         const gameResponse = await fetch("/data/games.json");
         if (!response.ok || !gameResponse.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -97,10 +97,10 @@ export const Leaderboard = () => {
 
         for (const player of data) {
           const playerGames = gamesData.games.filter(
-            (game: { name: string }) => game.name === player.Name
+            (game: { name: string }) => game.name === player.name
           );
 
-          if (player["Ninja Sessions Attended"] > 0) {
+          if (player.ninjaSessionsAttended > 0) {
             player["Games Played"] = playerGames.length;
 
             player["Games Won"] = playerGames.filter(
@@ -117,7 +117,7 @@ export const Leaderboard = () => {
                   accumulator + game.ninjaPoints,
                 0
               ) +
-              player["Ninja Sessions Attended"] * 10;
+              (player.ninjaSessionsAttended ?? 1) * 10;
 
             player["Points Won"] = playerGames.reduce(
               (accumulator: number, game: { matchPointsWon: number }) =>
@@ -132,6 +132,8 @@ export const Leaderboard = () => {
             );
 
             player["Net Points"] = player["Points Won"] - player["Points Lost"];
+
+            player.ninjaSessionsAttended = 1;
           } else {
             player["Games Played"] = 0;
             player["Games Won"] = 0;
@@ -140,6 +142,7 @@ export const Leaderboard = () => {
             player["Points Won"] = 0;
             player["Points Lost"] = 0;
             player["Net Points"] = 0;
+            player.ninjaSessionsAttended = 0;
           }
 
           leaderboardData.push(player);
@@ -204,7 +207,7 @@ export const Leaderboard = () => {
     }
 
     return sortablePlayers.filter((player) =>
-      player.Name.toLowerCase().includes(search.toLowerCase())
+      player.name.toLowerCase().includes(search.toLowerCase())
     );
   }, [players, search, sortColumn, sortDirection]);
 
@@ -252,7 +255,7 @@ export const Leaderboard = () => {
             {sortedPlayers.map((player, index) => (
               <TableRow
                 className={`${index % 2 == 1 ? "bg-[#fd390017]" : "bg-white"}`}
-                key={player.Name}
+                key={player.name}
               >
                 {columns.map((column) => (
                   <TableCell key={column.key} className='px-6 py-4'>
