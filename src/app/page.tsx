@@ -2,7 +2,7 @@ import { Leaderboard } from "@/components/Leaderboard";
 
 export default function Home() {
   return (
-    <div>
+    <div className='h-[100vh] overflow-none'>
       <div className='bg-[#3a3532] p-4 mb-10 flex justify-between items-center'>
         <div className='flex md:flex-1 justify-start'>
           <img
