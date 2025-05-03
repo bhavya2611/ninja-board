@@ -76,7 +76,7 @@
       "level": "Beg"
     },
     {
-      "name": "Soham Pattnaik + Shalini Kr",
+      "name": "Soham Pattnaik",
       "ninjaSessionId": 1,
       "level": "Beg"
     },
@@ -121,14 +121,104 @@
       "level": "Inter"
     },
     {
-      "name": "Lavina Pinheiro (3) + Omkar Thombare",
+      "name": "Lavina Pinheiro + Omkar Thombare",
       "ninjaSessionId": 2,
       "level": "Inter"
     },
     {
-      "name": "Chinar Deshpande (3) + Shauri Jain",
+      "name": "Chinar Deshpande + Shauri Jain",
       "ninjaSessionId": 2,
       "level": "Inter"
+    },
+    {
+      "name": "Yash Sultania + Rishiit Singh Chhabra",
+      "ninjaSessionId": 3,
+      "level": "Pro"
+    },
+    {
+      "name": "Sriram Rao + Suryabhan Shinde",
+      "ninjaSessionId": 3,
+      "level": "Pro"
+    },
+    {
+      "name": "Yash Mitkari + Tanveer Singh",
+      "ninjaSessionId": 3,
+      "level": "Pro"
+    },
+    {
+      "name": "Prathamesh Badve + Rahul Sanap",
+      "ninjaSessionId": 3,
+      "level": "Pro"
+    },
+    {
+      "name": "Kuldeep Ruchandani + Akshay Mahajan",
+      "ninjaSessionId": 3,
+      "level": "Pro"
+    },
+    {
+      "name": "Aarush Leekha + Akshay Jain",
+      "ninjaSessionId": 3,
+      "level": "Pro"
+    },
+    {
+      "name": "Aashray Gupta + Siddique Mirajwale",
+      "ninjaSessionId": 3,
+      "level": "Inter"
+    },
+    {
+      "name": "Shehzad Shaikh + Vivaswan Damle",
+      "ninjaSessionId": 3,
+      "level": "Inter"
+    },
+    {
+      "name": "Atharav Sonavane + Harsh Sathaye",
+      "ninjaSessionId": 3,
+      "level": "Inter"
+    },
+    {
+      "name": "Himanshu Dasani +",
+      "ninjaSessionId": 3,
+      "level": "Inter"
+    },
+    {
+      "name": "Aniket Shinde + Mayank Khandelwal",
+      "ninjaSessionId": 3,
+      "level": "Inter"
+    },
+    {
+      "name": "Vishal Shivhare + Priyal Chatterjee",
+      "ninjaSessionId": 3,
+      "level": "Inter"
+    },
+    {
+      "name": "Aman Arora + Pushkar",
+      "ninjaSessionId": 3,
+      "level": "Beg"
+    },
+    {
+      "name": "Rahul Prasad + Astha Sinha",
+      "ninjaSessionId": 3,
+      "level": "Beg"
+    },
+    {
+      "name": "Ayush Sawalkar + Astha Goel",
+      "ninjaSessionId": 3,
+      "level": "Beg"
+    },
+    {
+      "name": "Amit Bhardwaj + Shahana Joshi",
+      "ninjaSessionId": 3,
+      "level": "Beg"
+    },
+    {
+      "name": "Aditya Mehta + Subodh Karunasagar",
+      "ninjaSessionId": 3,
+      "level": "Beg"
+    },
+    {
+      "name": "Herob Aga + Amogh Dasture",
+      "ninjaSessionId": 3,
+      "level": "Beg"
     }
   ]
 }

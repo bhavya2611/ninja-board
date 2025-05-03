@@ -21,6 +21,7 @@ import {
   TrendingUp,
   TrendingDown
 } from "lucide-react";
+import LeaderboardColumnSelector, { Column } from "./LeaderboardColumnSelector";
 
 // Define the type for a player entry
 type Player = {
@@ -38,40 +39,62 @@ type Player = {
 };
 
 const columns = [
-  { key: "Rank", label: "Rank", icon: null, sortable: true },
-  { key: "name", label: "Name", icon: User, sortable: true },
+  { key: "Rank", label: "Rank", icon: null, sortable: true, visible: true },
+  { key: "name", label: "Name", icon: User, sortable: true, visible: true },
   {
     key: "ninjaSessionsAttended",
     label: "Ninja Sessions",
-    sortable: false
+    sortable: false,
+    visible: true
   },
   {
     key: "Games Played",
     label: "Games Played",
     icon: BarChart,
-    sortable: false
+    sortable: false,
+    visible: true
   },
-  { key: "Games Won", label: "Games Won", icon: Trophy, sortable: false },
-  { key: "Games Lost", label: "Games Lost", icon: null, sortable: false },
-  { key: "Points Won", label: "Points Won", icon: TrendingUp, sortable: false },
+  {
+    key: "Games Won",
+    label: "Games Won",
+    icon: Trophy,
+    sortable: false,
+    visible: true
+  },
+  {
+    key: "Games Lost",
+    label: "Games Lost",
+    icon: null,
+    sortable: false,
+    visible: true
+  },
+  {
+    key: "Points Won",
+    label: "Points Won",
+    icon: TrendingUp,
+    sortable: false,
+    visible: false
+  },
   {
     key: "Points Lost",
     label: "Points Lost",
     icon: TrendingDown,
-    sortable: false
+    sortable: false,
+    visible: false
   },
   {
     key: "Net Points",
     label: "Net Points",
-    sortable: false
+    sortable: false,
+    visible: true
   },
   {
     key: "Total Ninja Points",
-    label: "Ninja Points",
+    label: "Ninja Coins",
     icon: Pointer,
-    sortable: true
-  },
-  { key: "selfRating", label: "Rating", icon: null, sortable: false }
+    sortable: true,
+    visible: true
+  }
 ];
 
 export const Leaderboard = () => {
@@ -79,6 +102,7 @@ export const Leaderboard = () => {
   const [search, setSearch] = useState("");
   const [sortColumn, setSortColumn] = useState<keyof Player | null>();
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">();
+  const [columnsShown, setColumnsShown] = useState(columns);
 
   // Load data from JSON file
   useEffect(() => {
@@ -117,7 +141,7 @@ export const Leaderboard = () => {
                   accumulator + game.ninjaPoints,
                 0
               ) +
-              (player.ninjaSessionsAttended ?? 1) * 10;
+              player.ninjaSessionsAttended * 10;
 
             player["Points Won"] = playerGames.reduce(
               (accumulator: number, game: { matchPointsWon: number }) =>
@@ -132,17 +156,6 @@ export const Leaderboard = () => {
             );
 
             player["Net Points"] = player["Points Won"] - player["Points Lost"];
-
-            player.ninjaSessionsAttended = 1;
-          } else {
-            player["Games Played"] = 0;
-            player["Games Won"] = 0;
-            player["Games Lost"] = 0;
-            player["Total Ninja Points"] = 0;
-            player["Points Won"] = 0;
-            player["Points Lost"] = 0;
-            player["Net Points"] = 0;
-            player.ninjaSessionsAttended = 0;
           }
 
           leaderboardData.push(player);
@@ -213,42 +226,52 @@ export const Leaderboard = () => {
 
   return (
     <div>
-      <Input
-        type='search'
-        placeholder='Search player...'
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        className='mb-4 rounded-xl'
-      />
+      <div className='flex gap-4 items-center mb-4'>
+        <Input
+          type='search'
+          placeholder='Search player...'
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className='rounded-xl'
+        />
+        <LeaderboardColumnSelector
+          // @ts-ignore
+          columns={columnsShown}
+          // @ts-ignore
+          onChange={(updated: Column[]) => setColumnsShown(updated)}
+        />
+      </div>
       <div className='relative overflow-x-auto shadow-md rounded-xl border-[1px]'>
         <Table>
           <TableHeader>
             <TableRow className='bg-gray-100'>
-              {columns.map((column) => (
-                <TableHead key={column.key} className='px-6 py-3'>
-                  {column.sortable ? (
-                    <button
-                      onClick={() => sortPlayers(column.key as keyof Player)}
-                      className='flex items-center gap-1 hover:underline'
-                    >
-                      {column.label}
-                      {sortColumn === column.key &&
-                        (sortDirection === "asc" ? (
-                          <ArrowUp className='h-4 w-4' />
-                        ) : (
-                          <ArrowDown className='h-4 w-4' />
-                        ))}
-                    </button>
-                  ) : (
-                    <div className='flex items-center gap-1'>
-                      {column.label}{" "}
-                      {column.icon && (
-                        <column.icon className='inline-block h-4 w-4 ml-1' />
-                      )}
-                    </div>
-                  )}
-                </TableHead>
-              ))}
+              {columnsShown
+                .filter((c) => c.visible)
+                .map((column) => (
+                  <TableHead key={column.key} className='px-6 py-3'>
+                    {column.sortable ? (
+                      <button
+                        onClick={() => sortPlayers(column.key as keyof Player)}
+                        className='flex items-center gap-1 hover:underline'
+                      >
+                        {column.label}
+                        {sortColumn === column.key &&
+                          (sortDirection === "asc" ? (
+                            <ArrowUp className='h-4 w-4' />
+                          ) : (
+                            <ArrowDown className='h-4 w-4' />
+                          ))}
+                      </button>
+                    ) : (
+                      <div className='flex items-center gap-1'>
+                        {column.label}{" "}
+                        {column.icon && (
+                          <column.icon className='inline-block h-4 w-4 ml-1' />
+                        )}
+                      </div>
+                    )}
+                  </TableHead>
+                ))}
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -257,14 +280,17 @@ export const Leaderboard = () => {
                 className={`${index % 2 == 1 ? "bg-[#fd390017]" : "bg-white"}`}
                 key={player.name}
               >
-                {columns.map((column) => (
-                  <TableCell key={column.key} className='px-6 py-4'>
-                    {column.key === "Rank" && !isNaN(Number(player[column.key]))
-                      ? `#${player[column.key]}`
-                      : // @ts-expect-error
-                        player[column.key]}
-                  </TableCell>
-                ))}
+                {columnsShown
+                  .filter((c) => c.visible)
+                  .map((column) => (
+                    <TableCell key={column.key} className='px-6 py-4'>
+                      {column.key === "Rank" &&
+                      !isNaN(Number(player[column.key]))
+                        ? `#${player[column.key]}`
+                        : // @ts-expect-error
+                          player[column.key]}
+                    </TableCell>
+                  ))}
               </TableRow>
             ))}
           </TableBody>

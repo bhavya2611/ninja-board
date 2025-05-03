@@ -20,15 +20,6 @@ type Team = {
   ninjaSessionId: number;
 };
 
-type Game = {
-  team1: string;
-  team2: string;
-  team1Points: number;
-  team2Points: number;
-  group: string;
-  ninjaSessionId: number;
-};
-
 const SubmitScores = () => {
   const [teams, setTeams] = useState<Team[]>([]);
   const [team1, setTeam1] = useState<string>("");
@@ -71,30 +62,23 @@ const SubmitScores = () => {
       !team2 ||
       team1Points === undefined ||
       team2Points === undefined ||
-      //   ninjaPoints === undefined ||
-      !group
+      ninjaPoints === undefined ||
+      !group ||
+      team1Points > 11 ||
+      team2Points > 11
     ) {
-      setError("Please fill in all fields.");
+      setError("Please fill in all fields correctly.");
       setLoading(false);
       return;
     }
-
-    const newGame: Game = {
-      team1,
-      team2,
-      team1Points,
-      team2Points,
-      group,
-      ninjaSessionId: NINJA_SESSION_ID
-    };
 
     const player1GameData = {
       name: team1.split("+")[0].trim(),
       matchWon: team1Points === 11,
       matchPointsWon: team1Points,
       matchPointsLost: team2Points,
-      ninjaSessionId: NINJA_SESSION_ID
-      //   ninjaPoints: team1Points === 11 ? ninjaPoints : 0
+      ninjaSessionId: NINJA_SESSION_ID,
+      ninjaPoints: team1Points === 11 ? ninjaPoints : 0
     };
 
     const player2GameData = {
@@ -102,8 +86,8 @@ const SubmitScores = () => {
       matchWon: team1Points === 11,
       matchPointsWon: team1Points,
       matchPointsLost: team2Points,
-      ninjaSessionId: NINJA_SESSION_ID
-      //   ninjaPoints: team1Points === 11 ? ninjaPoints : 0
+      ninjaSessionId: NINJA_SESSION_ID,
+      ninjaPoints: team1Points === 11 ? ninjaPoints : 0
     };
 
     const player3GameData = {
@@ -111,8 +95,8 @@ const SubmitScores = () => {
       matchWon: team2Points === 11,
       matchPointsWon: team2Points,
       matchPointsLost: team1Points,
-      ninjaSessionId: NINJA_SESSION_ID
-      //   ninjaPoints: team2Points === 11 ? ninjaPoints : 0
+      ninjaSessionId: NINJA_SESSION_ID,
+      ninjaPoints: team2Points === 11 ? ninjaPoints : 0
     };
 
     const player4GameData = {
@@ -120,8 +104,8 @@ const SubmitScores = () => {
       matchWon: team2Points === 11,
       matchPointsWon: team2Points,
       matchPointsLost: team1Points,
-      ninjaSessionId: NINJA_SESSION_ID
-      //   ninjaPoints: team2Points === 11 ? ninjaPoints : 0
+      ninjaSessionId: NINJA_SESSION_ID,
+      ninjaPoints: team2Points === 11 ? ninjaPoints : 0
     };
 
     try {
@@ -143,12 +127,11 @@ const SubmitScores = () => {
       }
 
       // Reset form fields upon successful submission
-      //setTeam1("");
-      //   setTeam2("");
-      //   setTeam1Points(undefined);
-      //   setTeam2Points(undefined);
-      //   //setGroup("");
-      //   setNinjaPoints(undefined);
+      setTeam1("");
+      setTeam2("");
+      setTeam1Points(undefined);
+      setTeam2Points(undefined);
+      setNinjaPoints(undefined);
 
       alert("Score submitted successfully!"); // replace with toast
     } catch (e: any) {
@@ -251,7 +234,7 @@ const SubmitScores = () => {
               placeholder='Enter Team 2 Points'
             />
           </div>
-          {/* <div>
+          <div>
             <Label htmlFor='team2Points'>Ninja Points</Label>
             <Input
               type='number'
@@ -260,7 +243,7 @@ const SubmitScores = () => {
               onChange={(e) => setNinjaPoints(Number(e.target.value))}
               placeholder='Enter Ninja Points'
             />
-          </div> */}
+          </div>
           <Button type='submit' disabled={loading}>
             {loading ? "Submitting..." : "Submit Score"}
           </Button>
