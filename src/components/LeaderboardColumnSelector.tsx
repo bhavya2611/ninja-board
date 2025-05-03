@@ -33,7 +33,7 @@ export default function LeaderboardColumnSelector({
   return (
     <Popover.Root open={open} onOpenChange={setOpen}>
       <Popover.Trigger asChild>
-        <button className='px-3 py-2 text-sm bg-white border rounded-lg shadow hover:bg-gray-50 min-w-[160px]'>
+        <button className='px-3 py-2 text-sm bg-white border rounded-lg hover:bg-gray-50 min-w-[160px]'>
           Select Columns
         </button>
       </Popover.Trigger>
