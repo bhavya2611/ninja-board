@@ -37,7 +37,13 @@
     "locality": "Kasba Peth",
     "gender": "Male",
     "selfRating": 4,
-    "ninjaSessionsAttended": 2
+    "ninjaSessionsAttended": 3
+  },
+  {
+    "playerId": "#5",
+    "name": "Lakshya Bisht",
+    "selfRating": 2.5,
+    "ninjaSessionsAttended": 1
   },
   {
     "playerId": "#6",
@@ -127,7 +133,7 @@
     "locality": "Pune",
     "gender": "Female",
     "selfRating": 2,
-    "ninjaSessionsAttended": 1
+    "ninjaSessionsAttended": 3
   },
   {
     "playerId": "#16",
@@ -187,7 +193,7 @@
     "locality": "Viman Nagar Pune",
     "gender": "Male",
     "selfRating": 3,
-    "ninjaSessionsAttended": 2
+    "ninjaSessionsAttended": 3
   },
   {
     "playerId": "#22",
@@ -224,10 +230,10 @@
     "name": "Atharva Sonavane",
     "contactNumber": 9403284340,
     "age": 22,
-    "locality": "Undhri",
+    "locality": "Undri",
     "gender": "Male",
     "selfRating": 3,
-    "ninjaSessionsAttended": 2
+    "ninjaSessionsAttended": 3
   },
   {
     "playerId": "#26",
@@ -306,8 +312,8 @@
     "age": 30,
     "locality": "Yerwada",
     "gender": "Male",
-    "selfRating": 2,
-    "ninjaSessionsAttended": 1
+    "selfRating": 2.5,
+    "ninjaSessionsAttended": 2
   },
   {
     "playerId": "#35",
@@ -567,7 +573,7 @@
     "locality": "Shastri Nagar",
     "gender": "Female",
     "selfRating": 2,
-    "ninjaSessionsAttended": 1
+    "ninjaSessionsAttended": 2
   },
   {
     "playerId": "#59",
@@ -597,7 +603,7 @@
     "locality": "Wadgaon Sheri",
     "gender": "Male",
     "selfRating": 4,
-    "ninjaSessionsAttended": 2
+    "ninjaSessionsAttended": 3
   },
   {
     "playerId": "#62",
@@ -657,7 +663,7 @@
     "locality": "Amanora",
     "gender": "Male",
     "selfRating": 3.5,
-    "ninjaSessionsAttended": 1
+    "ninjaSessionsAttended": 2
   },
   {
     "playerId": "#68",
@@ -701,6 +707,60 @@
     "playerId": "#73",
     "name": "Subodh Karunasagar",
     "selfRating": null,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#74",
+    "name": "Steve Aby Tonio",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#75",
+    "name": "Yogesh Bhatia",
+    "selfRating": 2.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#76",
+    "name": "Mihir Singh Rajput",
+    "selfRating": 2.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#77",
+    "name": "Pooja Maheshwari",
+    "selfRating": 2.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#78",
+    "name": "Siddharth Bagrecha",
+    "selfRating": 2.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#79",
+    "name": "Imran Nadaph",
+    "selfRating": 2.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#80",
+    "name": "Himal Goyal",
+    "selfRating": 2.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#81",
+    "name": "Aniruddha Surve",
+    "selfRating": 2.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#82",
+    "name": "Mihir Ranade",
+    "selfRating": 2.5,
     "ninjaSessionsAttended": 1
   }
 ]

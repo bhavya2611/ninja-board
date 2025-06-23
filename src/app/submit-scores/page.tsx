@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 
-const NINJA_SESSION_ID = 2;
+const NINJA_SESSION_ID = 4;
 
 type Team = {
   name: string;
