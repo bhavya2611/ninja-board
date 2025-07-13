@@ -191,7 +191,7 @@
       "level": "Inter"
     },
     {
-      "name": "Aman Arora + Pushkar",
+      "name": "Aman Arora + Pushkar Solanki",
       "ninjaSessionId": 3,
       "level": "Beg"
     },
@@ -263,6 +263,56 @@
     {
       "name": "Himal Goyal + Mihir Ranade",
       "ninjaSessionId": 4,
+      "level": "Inter"
+    },
+    {
+      "name": "Bhavya Mehta + Keya Shahani",
+      "ninjaSessionId": 5,
+      "level": "Inter"
+    },
+    {
+      "name": "Anil Tripathi + Suryabhan Shinde",
+      "ninjaSessionId": 5,
+      "level": "Inter"
+    },
+    {
+      "name": "Santosh Sangle + Imran Nadaph",
+      "ninjaSessionId": 5,
+      "level": "Inter"
+    },
+    {
+      "name": "Sunil Yadav + Gautam Tripathi",
+      "ninjaSessionId": 5,
+      "level": "Inter"
+    },
+    {
+      "name": "Amit Bhardwaj + Sriram Rao",
+      "ninjaSessionId": 5,
+      "level": "Inter"
+    },
+    {
+      "name": "Priyal Chatterjee + Yogesh Bhatia",
+      "ninjaSessionId": 5,
+      "level": "Inter"
+    },
+    {
+      "name": "Herob Aga + Soham Pattnaik",
+      "ninjaSessionId": 5,
+      "level": "Inter"
+    },
+    {
+      "name": "Muskan Jagwani + Pushkar Solanki",
+      "ninjaSessionId": 5,
+      "level": "Inter"
+    },
+    {
+      "name": "Serah Paul + Akshansh Goyal",
+      "ninjaSessionId": 5,
+      "level": "Inter"
+    },
+    {
+      "name": "Aditya Pradeep + Drumil Shah",
+      "ninjaSessionId": 5,
       "level": "Inter"
     }
   ]

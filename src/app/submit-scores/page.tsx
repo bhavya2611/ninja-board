@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 
-const NINJA_SESSION_ID = 4;
+const NINJA_SESSION_ID = 5;
 
 type Team = {
   name: string;
@@ -127,11 +127,11 @@ const SubmitScores = () => {
       }
 
       // Reset form fields upon successful submission
-      setTeam1("");
-      setTeam2("");
-      setTeam1Points(undefined);
-      setTeam2Points(undefined);
-      setNinjaPoints(undefined);
+      // setTeam1("");
+      // setTeam2("");
+      // setTeam1Points(undefined);
+      // setTeam2Points(undefined);
+      // setNinjaPoints(undefined);
 
       alert("Score submitted successfully!"); // replace with toast
     } catch (e: any) {

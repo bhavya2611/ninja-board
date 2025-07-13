@@ -3,7 +3,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { timeStamp } from "console";
 
-const NINJA_SESSION_ID = 2;
+const NINJA_SESSION_ID = 5;
 
 type Game = {
   name: string;
