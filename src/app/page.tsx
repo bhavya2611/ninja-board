@@ -32,8 +32,8 @@ export default function Home() {
           <h3 className='text-sm md:text-lg font-bold text-[#f0e5c7]'>SBA</h3>
         </div>
       </div>
-      {/* <div className='container mx-auto px-2 mt-36'>
-        <div className='bg-[url(/yaba-bg.png)] bg-cover text-white font-bold rounded-xl border border-gray-300 p-8 md:text-xl flex justify-between items-center mb-5 mx-auto'>
+      <div className='container mx-auto px-2 md:mt-36 mt-28'>
+        <div className='bg-[url(/yaba-bg.png)] bg-cover text-white font-bold rounded-xl border border-gray-300 md:p-8 p-4 gap-4 text-center md:text-xl text-xs flex justify-between items-center mb-5 mx-auto'>
           <div
             className='underline cursor-pointer'
             onClick={() => window.open("https://yabasports.com/")}
@@ -42,8 +42,8 @@ export default function Home() {
           </div>
           <div>Flat 55% off on MRP for Net Ninjas</div>
         </div>
-      </div> */}
-      <div className='container mx-auto pb-10 px-2 mt-36'>
+      </div>
+      <div className='container mx-auto pb-10 px-2'>
         <Leaderboard />
       </div>
     </div>
