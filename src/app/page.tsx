@@ -40,7 +40,7 @@ export default function Home() {
           >
             OFFICIAL EQUIPMENT PARTNER - YABA
           </div>
-          <div>Flat 55% off on MRP for Net Ninjas</div>
+          <div>Upto 55% off on MRP for Net Ninjas</div>
         </div>
       </div>
       <div className='container mx-auto pb-10 px-2'>
