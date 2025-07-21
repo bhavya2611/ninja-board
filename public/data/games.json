@@ -4959,6 +4959,406 @@
       "matchPointsLost": 11,
       "ninjaSessionId": 5,
       "ninjaPoints": 0
+    },
+    {
+      "name": "Tejas Bajwa",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 4,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 10
+    },
+    {
+      "name": "Gaurav Darade",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 4,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 10
+    },
+    {
+      "name": "Pooja Maheshwari",
+      "matchWon": false,
+      "matchPointsWon": 4,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Subhash Menagowda",
+      "matchWon": false,
+      "matchPointsWon": 4,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Himal Goyal",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 8,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 10
+    },
+    {
+      "name": "Ayush Sawalkar",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 8,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 10
+    },
+    {
+      "name": "Harjas Bajwa",
+      "matchWon": false,
+      "matchPointsWon": 8,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Mihir Singh Rajput",
+      "matchWon": false,
+      "matchPointsWon": 8,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Tejas Bajwa",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 7,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 15
+    },
+    {
+      "name": "Gaurav Darade",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 7,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 15
+    },
+    {
+      "name": "Yash Mundada",
+      "matchWon": false,
+      "matchPointsWon": 7,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Yogesh Bhatia",
+      "matchWon": false,
+      "matchPointsWon": 7,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Himal Goyal",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 5,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 15
+    },
+    {
+      "name": "Ayush Sawalkar",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 5,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 15
+    },
+    {
+      "name": "Pooja Maheshwari",
+      "matchWon": false,
+      "matchPointsWon": 5,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Subhash Menagowda",
+      "matchWon": false,
+      "matchPointsWon": 5,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Yash Mundada",
+      "matchWon": false,
+      "matchPointsWon": 10,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Yogesh Bhatia",
+      "matchWon": false,
+      "matchPointsWon": 10,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Harjas Bajwa",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 10,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 10
+    },
+    {
+      "name": "Mihir Singh Rajput",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 10,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 10
+    },
+    {
+      "name": "Tejas Bajwa",
+      "matchWon": false,
+      "matchPointsWon": 10,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Gaurav Darade",
+      "matchWon": false,
+      "matchPointsWon": 10,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Himal Goyal",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 10,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 20
+    },
+    {
+      "name": "Ayush Sawalkar",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 10,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 20
+    },
+    {
+      "name": "Harjas Bajwa",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 9,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 15
+    },
+    {
+      "name": "Mihir Singh Rajput",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 9,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 15
+    },
+    {
+      "name": "Pooja Maheshwari",
+      "matchWon": false,
+      "matchPointsWon": 9,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Subhash Menagowda",
+      "matchWon": false,
+      "matchPointsWon": 9,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Yash Mundada",
+      "matchWon": false,
+      "matchPointsWon": 6,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Yogesh Bhatia",
+      "matchWon": false,
+      "matchPointsWon": 6,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Himal Goyal",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 6,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 35
+    },
+    {
+      "name": "Ayush Sawalkar",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 6,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 35
+    },
+    {
+      "name": "Tejas Bajwa",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 2,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 10
+    },
+    {
+      "name": "Gaurav Darade",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 2,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 10
+    },
+    {
+      "name": "Harjas Bajwa",
+      "matchWon": false,
+      "matchPointsWon": 2,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Mihir Singh Rajput",
+      "matchWon": false,
+      "matchPointsWon": 2,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Yash Mundada",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 5,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 10
+    },
+    {
+      "name": "Yogesh Bhatia",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 5,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 10
+    },
+    {
+      "name": "Pooja Maheshwari",
+      "matchWon": false,
+      "matchPointsWon": 5,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Subhash Menagowda",
+      "matchWon": false,
+      "matchPointsWon": 5,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Himal Goyal",
+      "matchWon": false,
+      "matchPointsWon": 8,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Ayush Sawalkar",
+      "matchWon": false,
+      "matchPointsWon": 8,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Harjas Bajwa",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 8,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 40
+    },
+    {
+      "name": "Mihir Singh Rajput",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 8,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 40
+    },
+    {
+      "name": "Tejas Bajwa",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 5,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 15
+    },
+    {
+      "name": "Gaurav Darade",
+      "matchWon": true,
+      "matchPointsWon": 11,
+      "matchPointsLost": 5,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 15
+    },
+    {
+      "name": "Yash Mundada",
+      "matchWon": false,
+      "matchPointsWon": 5,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Yogesh Bhatia",
+      "matchWon": false,
+      "matchPointsWon": 5,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Pooja Maheshwari",
+      "matchWon": false,
+      "matchPointsWon": 6,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
+    },
+    {
+      "name": "Subhash Menagowda",
+      "matchWon": false,
+      "matchPointsWon": 6,
+      "matchPointsLost": 11,
+      "ninjaSessionId": 6,
+      "ninjaPoints": 0
     }
   ]
 }

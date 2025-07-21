@@ -273,7 +273,7 @@
     "locality": "Market Yard",
     "gender": "Male",
     "selfRating": 3,
-    "ninjaSessionsAttended": 1
+    "ninjaSessionsAttended": 2
   },
   {
     "playerId": "#30",
@@ -583,7 +583,7 @@
     "locality": "Pimple Saudagar",
     "gender": "M",
     "selfRating": 3,
-    "ninjaSessionsAttended": 1
+    "ninjaSessionsAttended": 2
   },
   {
     "playerId": "#60",
@@ -719,19 +719,19 @@
     "playerId": "#75",
     "name": "Yogesh Bhatia",
     "selfRating": 2.5,
-    "ninjaSessionsAttended": 2
+    "ninjaSessionsAttended": 3
   },
   {
     "playerId": "#76",
     "name": "Mihir Singh Rajput",
-    "selfRating": 2.5,
-    "ninjaSessionsAttended": 1
+    "selfRating": 3.5,
+    "ninjaSessionsAttended": 2
   },
   {
     "playerId": "#77",
     "name": "Pooja Maheshwari",
     "selfRating": 2.5,
-    "ninjaSessionsAttended": 1
+    "ninjaSessionsAttended": 2
   },
   {
     "playerId": "#78",
@@ -748,8 +748,8 @@
   {
     "playerId": "#80",
     "name": "Himal Goyal",
-    "selfRating": 2.5,
-    "ninjaSessionsAttended": 1
+    "selfRating": 3.5,
+    "ninjaSessionsAttended": 2
   },
   {
     "playerId": "#81",
@@ -820,6 +820,30 @@
   {
     "playerId": "#92",
     "name": "Sunil Yadav",
+    "selfRating": 3.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#93",
+    "name": "Tejas Bajwa",
+    "selfRating": 3,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#94",
+    "name": "Harjas Bajwa",
+    "selfRating": 2.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#95",
+    "name": "Subhash Menagowda",
+    "selfRating": 3.5,
+    "ninjaSessionsAttended": 1
+  },
+  {
+    "playerId": "#96",
+    "name": "Gaurav Darade",
     "selfRating": 3.5,
     "ninjaSessionsAttended": 1
   }
