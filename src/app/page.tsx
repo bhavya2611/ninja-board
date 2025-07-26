@@ -33,13 +33,15 @@ export default function Home() {
         </div>
       </div>
       <div className='container mx-auto px-2 md:mt-36 mt-28'>
-        <div className='bg-[url(/yaba-bg.png)] bg-cover text-white font-bold rounded-xl border border-gray-300 md:p-8 p-4 gap-4 text-center md:text-xl text-xs flex justify-between items-center mb-5 mx-auto'>
-          <div
-            className='underline cursor-pointer'
-            onClick={() => window.open("https://yabasports.com/")}
-          >
+        <div
+          className='bg-[url(/yaba-bg.png)] cursor-pointer bg-cover text-white font-bold rounded-xl border border-gray-300 md:px-8 p-4 gap-4 text-center md:text-xl text-xs flex justify-between items-center mb-5 mx-auto'
+          onClick={() => window.open("https://yabasports.com/")}
+        >
+          <div className='flex md:gap-1 items-center'>
             OFFICIAL EQUIPMENT PARTNER - YABA
+            <img alt='yaba logo' className='size-16' src='./yaba.png' />
           </div>
+
           <div>Upto 55% off on MRP for Net Ninjas</div>
         </div>
       </div>
